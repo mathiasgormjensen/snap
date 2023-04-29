@@ -35,6 +35,8 @@ namespace Snap
 
 			if (Properties.Settings.Default.NotificationOnStartup)
 				this.tsmiAbout.PerformClick();
+
+			base.Hide();
 		}
 
 		private void hook_KeyPressed(object sender, KeyPressedEventArgs e)

@@ -1,0 +1,15 @@
+﻿# Prerequisites
+Microsoft .NET 4.8
+
+# Installation
+1. Place Snap!.exe and all other files in this folder, in some folder such as C:\pomio\Snap!
+2. Add a shortcut to Snap!.exe by opening shell:startup and adding a shortcut to Snap!.exe
+3. Restart your computer and confirm that you are now able to snap windows using the shortcuts CTRL+ALT+LEFT, CTRL+ALT+UP and CTRL+ALT+RIGHT
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

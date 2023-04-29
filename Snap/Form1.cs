@@ -62,12 +62,6 @@ namespace Snap
 			this.Snap(Properties.Settings.Default.RightGroupIndex, Properties.Settings.Default.RightItemIndex);
 		}
 
-		[DllImport("user32.dll")]
-		private static extern bool SetForegroundWindow(IntPtr hWnd);
-
-		[DllImport("user32.dll")]
-		private static extern IntPtr GetForegroundWindow();
-
 		private void Snap(int first, int second)
 		{
 			var element = System.Windows.Automation.AutomationElement.FocusedElement;
@@ -162,11 +156,6 @@ namespace Snap
 			this.notifyIcon.ShowBalloonTip(0, "Snap!", @"Snap left: CTRL+ALT+LEFT
 Snap middle: CTRL+ALT+UP
 Snap right: CTRL+ALT+RIGHT", ToolTipIcon.Info);
-		}
-
-		private void button1_Click(object sender, EventArgs e)
-		{
-			SnapLeft();
 		}
 	}
 }

@@ -42,7 +42,7 @@
 			// 
 			this.notifyIcon.ContextMenuStrip = this.contextMenuStrip;
 			this.notifyIcon.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon.Icon")));
-			this.notifyIcon.Text = "Window snapper";
+			this.notifyIcon.Text = "Snap!";
 			this.notifyIcon.Visible = true;
 			// 
 			// contextMenuStrip

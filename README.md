@@ -6,3 +6,5 @@ Snap! simplifies this by allowing you to use CTRL+ALT+LEFT instead, which is ver
 Snapping the current window to the middle of the screen is done using CTRL+ALT+UP, and snapping to the right is done using CTRL+ALT+RIGHT.
 
 Snap! relies on Windows' built-in snap feature, meaning you must have this feature enabled, in order to use Snap!.
+
+View more on http://pomio.dk/snap/

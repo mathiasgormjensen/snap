@@ -125,7 +125,9 @@ namespace Snap
 					Serilog.Log.Information(current?.Name);
 					if (current?.AutomationId == "SnapFlyoutControl")
 					{
-						var group = element.FindAll(System.Windows.Automation.TreeScope.Children, System.Windows.Automation.Condition.TrueCondition)[first];
+						var children = element.FindAll(System.Windows.Automation.TreeScope.Children, System.Windows.Automation.Condition.TrueCondition);
+						var offset = children.Count - 6;
+						var group = children[first + offset];
 						Serilog.Log.Information($"Group #{first}: {group.Current.Name}");
 						var item = group.FindAll(TreeScope.Children, System.Windows.Automation.Condition.TrueCondition)[second];
 						Serilog.Log.Information($"Item #{first}: {item.Current.Name}");

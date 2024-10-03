@@ -12,7 +12,7 @@ namespace Snap.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.8.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -152,6 +152,127 @@ namespace Snap.Properties {
             }
             set {
                 this["DetectAndIgnoreeWindowsSnapWindow"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Program Files\\Microsoft Visual Studio\\2022\\Enterprise\\Common7\\IDE\\devenv.exe")]
+        public string NumPad1 {
+            get {
+                return ((string)(this["NumPad1"]));
+            }
+            set {
+                this["NumPad1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("notepad.exe")]
+        public string NumPad2 {
+            get {
+                return ((string)(this["NumPad2"]));
+            }
+            set {
+                this["NumPad2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NumPad3 {
+            get {
+                return ((string)(this["NumPad3"]));
+            }
+            set {
+                this["NumPad3"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NumPad4 {
+            get {
+                return ((string)(this["NumPad4"]));
+            }
+            set {
+                this["NumPad4"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NumPad5 {
+            get {
+                return ((string)(this["NumPad5"]));
+            }
+            set {
+                this["NumPad5"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NumPad6 {
+            get {
+                return ((string)(this["NumPad6"]));
+            }
+            set {
+                this["NumPad6"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://dev.azure.com/alfinans/IT%20Development/_boards/board/t/IT%20Development%" +
+            "20Team/Stories")]
+        public string NumPad7 {
+            get {
+                return ((string)(this["NumPad7"]));
+            }
+            set {
+                this["NumPad7"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://helm.alfinans.dk/Dashboard")]
+        public string NumPad8 {
+            get {
+                return ((string)(this["NumPad8"]));
+            }
+            set {
+                this["NumPad8"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://dev.azure.com/alfinans/_pulls")]
+        public string NumPad9 {
+            get {
+                return ((string)(this["NumPad9"]));
+            }
+            set {
+                this["NumPad9"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string NumPad0 {
+            get {
+                return ((string)(this["NumPad0"]));
+            }
+            set {
+                this["NumPad0"] = value;
             }
         }
     }

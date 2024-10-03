@@ -17,19 +17,39 @@ namespace Snap
 {
 	public partial class Form1 : Form
 	{
-		KeyboardHook hook = new KeyboardHook();
+		private readonly KeyboardHook _hook = new KeyboardHook();
 
 		public Form1()
 		{
 			InitializeComponent();
 
-			hook.KeyPressed += new EventHandler<KeyPressedEventArgs>(hook_KeyPressed);
-			hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Left);
-			hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Up);
-			hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Right);
-		}
+			_hook.KeyPressed += new EventHandler<KeyPressedEventArgs>(hook_KeyPressed);
+			_hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Left);
+			_hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Up);
+            _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Right);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad1))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad1);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad2))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad2);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad3))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad3);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad4))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad4);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad5))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad5);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad6))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad6);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad7))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad7);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad8))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad8);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad9))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad9);
+            if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad0))
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad0);
+        }
 
-		protected override void OnLoad(EventArgs e)
+        protected override void OnLoad(EventArgs e)
 		{
 			base.OnLoad(e);
 
@@ -41,15 +61,92 @@ namespace Snap
 
 		private void hook_KeyPressed(object sender, KeyPressedEventArgs e)
 		{
-			if (e.Key == Keys.Left)
-				this.SnapLeft();
-			else if (e.Key == Keys.Up)
-				this.SnapUp();
-			else if (e.Key == Keys.Right)
-				this.SnapRight();
-		}
+            try
+            {
+                if (e.Key == Keys.Left)
+                    this.SnapLeft();
+                else if (e.Key == Keys.Up)
+                    this.SnapUp();
+                else if (e.Key == Keys.Right)
+                    this.SnapRight();
+                else if (e.Key == Keys.NumPad1)
+                    NumPad1();
+                else if (e.Key == Keys.NumPad2)
+                    NumPad2();
+                else if (e.Key == Keys.NumPad3)
+                    NumPad3();
+                else if (e.Key == Keys.NumPad4)
+                    NumPad4();
+                else if (e.Key == Keys.NumPad5)
+                    NumPad5();
+                else if (e.Key == Keys.NumPad6)
+                    NumPad6();
+                else if (e.Key == Keys.NumPad7)
+                    NumPad7();
+                else if (e.Key == Keys.NumPad8)
+                    NumPad8();
+                else if (e.Key == Keys.NumPad9)
+                    NumPad9();
+                else if (e.Key == Keys.NumPad0)
+                    NumPad0();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Snap!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); ;
+            }
+        }
 
-		private void SnapLeft()
+        private void NumPad1()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad1);
+        }
+
+        private void NumPad2()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad2);
+        }
+
+        private void NumPad3()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad3);
+        }
+
+        private void NumPad4()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad4);
+        }
+
+        private void NumPad5()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad5);
+        }
+
+        private void NumPad6()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad6);
+        }
+
+        private void NumPad7()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad7);
+        }
+
+        private void NumPad8()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad8);
+        }
+
+        private void NumPad9()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad9);
+        }
+
+        private void NumPad0()
+        {
+            System.Diagnostics.Process.Start(Properties.Settings.Default.NumPad0);
+        }
+
+        private void SnapLeft()
 		{
 			this.Snap(Properties.Settings.Default.LeftGroupIndex, Properties.Settings.Default.LeftItemIndex);
 		}

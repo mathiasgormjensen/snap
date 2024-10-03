@@ -35,5 +35,35 @@
     <Setting Name="DetectAndIgnoreeWindowsSnapWindow" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="NumPad1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\devenv.exe</Value>
+    </Setting>
+    <Setting Name="NumPad2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">notepad.exe</Value>
+    </Setting>
+    <Setting Name="NumPad3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NumPad4" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NumPad5" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NumPad6" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="NumPad7" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://dev.azure.com/alfinans/IT%20Development/_boards/board/t/IT%20Development%20Team/Stories</Value>
+    </Setting>
+    <Setting Name="NumPad8" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://helm.alfinans.dk/Dashboard</Value>
+    </Setting>
+    <Setting Name="NumPad9" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://dev.azure.com/alfinans/_pulls</Value>
+    </Setting>
+    <Setting Name="NumPad0" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>

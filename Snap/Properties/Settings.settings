@@ -51,7 +51,7 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="NumPad6" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">https://chatgpt.com/</Value>
     </Setting>
     <Setting Name="NumPad7" Type="System.String" Scope="User">
       <Value Profile="(Default)">https://dev.azure.com/alfinans/IT%20Development/_boards/board/t/IT%20Development%20Team/Stories</Value>

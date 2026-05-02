@@ -28,25 +28,55 @@ namespace Snap
 			_hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Up);
             _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.Right);
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad1))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad1);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D1);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad2))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad2);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D2);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad3))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad3);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D3);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad4))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad4);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D4);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad5))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad5);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D5);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad6))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad6);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D6);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad7))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad7);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D7);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad8))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad8);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D8);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad9))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad9);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D9);
+            }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad0))
+            {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad0);
+                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D0);
+            }
         }
 
         protected override void OnLoad(EventArgs e)
@@ -69,25 +99,25 @@ namespace Snap
                     this.SnapUp();
                 else if (e.Key == Keys.Right)
                     this.SnapRight();
-                else if (e.Key == Keys.NumPad1)
+                else if (e.Key == Keys.NumPad1 || e.Key ==  Keys.D1)
                     NumPad1();
-                else if (e.Key == Keys.NumPad2)
+                else if (e.Key == Keys.NumPad2 || e.Key == Keys.D2)
                     NumPad2();
-                else if (e.Key == Keys.NumPad3)
+                else if (e.Key == Keys.NumPad3 || e.Key == Keys.D3)
                     NumPad3();
-                else if (e.Key == Keys.NumPad4)
+                else if (e.Key == Keys.NumPad4 || e.Key == Keys.D4)
                     NumPad4();
-                else if (e.Key == Keys.NumPad5)
+                else if (e.Key == Keys.NumPad5 || e.Key == Keys.D5)
                     NumPad5();
-                else if (e.Key == Keys.NumPad6)
+                else if (e.Key == Keys.NumPad6 || e.Key == Keys.D6)
                     NumPad6();
-                else if (e.Key == Keys.NumPad7)
+                else if (e.Key == Keys.NumPad7 || e.Key == Keys.D7)
                     NumPad7();
-                else if (e.Key == Keys.NumPad8)
+                else if (e.Key == Keys.NumPad8 || e.Key == Keys.D8)
                     NumPad8();
-                else if (e.Key == Keys.NumPad9)
+                else if (e.Key == Keys.NumPad9 || e.Key == Keys.D9)
                     NumPad9();
-                else if (e.Key == Keys.NumPad0)
+                else if (e.Key == Keys.NumPad0 || e.Key == Keys.D0)
                     NumPad0();
             }
             catch (Exception ex)

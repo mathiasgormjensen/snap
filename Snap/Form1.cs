@@ -30,52 +30,42 @@ namespace Snap
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad1))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad1);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D1);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad2))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad2);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D2);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad3))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad3);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D3);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad4))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad4);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D4);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad5))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad5);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D5);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad6))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad6);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D6);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad7))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad7);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D7);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad8))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad8);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D8);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad9))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad9);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D9);
             }
             if (!string.IsNullOrWhiteSpace(Properties.Settings.Default.NumPad0))
             {
                 _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.NumPad0);
-                _hook.RegisterHotKey(HookModifierKeys.Control | HookModifierKeys.Alt, Keys.D0);
             }
         }
 
